@@ -39,7 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django_extensions',
     'tinymce',
-    'emp_app'
+    'emp_app',
+    'hr_app'
+
 ]
 
 MIDDLEWARE = [
