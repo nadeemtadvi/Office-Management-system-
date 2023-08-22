@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+    <title>Mera Office</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-3">
+        <a class="navbar-brand" href="#">Mera Office</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+            aria-label="Toggle navigation"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" aria-current="page">Home <span
+                            class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+
+    {% block start %}
+
+
+    {% endblock %}
+
+
+    <section class="mt-5">
+        <div class="container ">
+            <div class="row">
+                <div class="col-6 p-3 ">
+                    <h4>Product</h4>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci provident modi earum debitis amet temporibus in sequi fuga magnam veritatis.
+                    </div>
+                </div>
+                <div class="col-6 p-3">
+                    <h4>Product</h4>
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor dolores aperiam molestiae obcaecati ut facere ratione, sed voluptatibus velit consequatur.
+                    </div>
+                </div>
+                            
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid  text-center bg-dark text-white mt-5">
+
+            <ul class="list-inline">
+                <li class="list-inline-item">Home</li>
+                <li class="list-inline-item">About</li>
+                <li class="list-inline-item">Contact</li>
+            </ul>
+            <ul class=" list-inline social-icon">
+                <li class="list-inline-item"><a href="" class="fa fa-facebook"></a></li>
+                <li class="list-inline-item"><a href="" class="fa fa-linkedin"></a></li>
+                <li class="list-inline-item"><a href="" class="fa fa-twitter"></a></li>
+                
+            </ul>
+
+        
+
+
+        </footer>
+</body>
+
+</html>

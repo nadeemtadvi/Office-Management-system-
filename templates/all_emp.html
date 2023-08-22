@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block start %}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h2>Office Management System</h2>
+            <hr>
+            <ul class=" list-inline social-icon">
+                <li class="list-inline-item"><a class="btn btn-success mt-2" role="button" href="/">View</a></li>
+                <li class="list-inline-item"><a class="btn btn-success mt-2" role="button" href="/">Add</a></li>
+                <li class="list-inline-item"><a class="btn btn-success mt-2" role="button" href="/">Remove</a></li>
+                <li class="list-inline-item"><a class="btn btn-success mt-2" role="button" href="/">Filter</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<table class="container table-bordered shadow text-center mt-4">
+
+    <tr>
+        <th>Sr no.</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Salary</th>
+        <th>Bonus</th>
+        <th>Phone</th>
+        <th>Role</th>
+        <th>Department</th>
+        <th>Location</th>
+        <th>Hire Date</th>
+    </tr>
+    {% for n in emp %}
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{n.first_name}}</td>
+        <td>{{n.last_name}}</td>
+        <td>{{n.salary}}</td>
+        <td>{{n.bonus}}</td>
+        <td>{{n.phone}}</td>
+        <td>{{n.role.name}}</td>
+        <td>{{n.dept.name}}</td>
+        <td>{{n.dept.location}}</td>
+        <td>{{n.hire_date}}</td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
